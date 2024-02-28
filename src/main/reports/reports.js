@@ -6,8 +6,8 @@ import Monthly from './monthly/monthly';
 import Daily from './daily/daily';
 import IconBar from './icon-bar';
 
-import DatePicker from '../../assets/date-picker';
 import DashboarDatePicker from '../../assets/dashboard-date-picker';
+import DatePicker from '../../assets/date-picker';
 
 import styles from './reports.module.css';
 
@@ -45,6 +45,7 @@ const ReportsPage = () => {
     filterBy === 'month' && setFilterValue(`${month}_${year}`);
     setOpenDashboardCalendar(false);
   };
+
   return (
     <div className={styles.reports_container}>
       {openDailyCalendar && (

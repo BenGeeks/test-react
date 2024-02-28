@@ -13,7 +13,6 @@ const apiRequest = (payload) => {
 
   return Axios(config)
     .then(function (response) {
-      console.log('RESPONSE DATA: ', response.data);
       return response.data;
     })
     .catch(function (error) {
