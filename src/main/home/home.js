@@ -6,7 +6,7 @@ const Home = () => {
     <div className={styles.home_container}>
       <div className={styles.title_container}>
         <h2 className={styles.main_title}>WELCOME</h2>
-        <p className={styles.description}>Go to Dashboard to check the test project.</p>
+        <p className={styles.description}>Go to REPORTS to check the test project.</p>
       </div>
     </div>
   );

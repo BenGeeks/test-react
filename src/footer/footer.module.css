@@ -10,3 +10,9 @@
   font-size: 0.8rem;
   height: 30px;
 }
+
+@media (max-width: 1080px) {
+  .footer_container {
+    display: none;
+  }
+}

@@ -5,6 +5,7 @@ import { PieChart, Pie, Cell } from 'recharts';
 import styles from '../dashboard.module.css';
 
 const PerformancePieGraphWithNeedle = ({ report }) => {
+  console.log('REPORTS: ', report);
   const RADIAN = Math.PI / 180;
   const data = [
     { name: 'A', value: 5000, color: 'red' },
@@ -67,11 +68,11 @@ const PerformancePieGraphWithNeedle = ({ report }) => {
         {needle(value, data, cx, cy, iR, oR, '#8884d8')}
       </PieChart>
       <div className={styles.performance_0_label}>0</div>
-      <div className={styles.performance_1k_label}>5000</div>
-      <div className={styles.performance_2k_label}>85000</div>
-      <div className={styles.performance_3k5_label}>11000</div>
-      <div className={styles.performance_4k5_label}>13000</div>
-      <div className={styles.performance_5k_label}>15000</div>
+      <div className={styles.performance_5k_label}>5000</div>
+      <div className={styles.performance_8k5_label}>8500</div>
+      <div className={styles.performance_11k_label}>11000</div>
+      <div className={styles.performance_13k_label}>13000</div>
+      <div className={styles.performance_15k_label}>15000</div>
     </div>
   );
 };

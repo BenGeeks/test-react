@@ -9,6 +9,8 @@ import IconBar from './icon-bar';
 import DatePicker from '../../assets/date-picker';
 import DashboarDatePicker from '../../assets/dashboard-date-picker';
 
+import styles from './reports.module.css';
+
 const ReportsPage = () => {
   const [openMonthlyCalendar, setOpenMonthlyCalendar] = useState(false);
   const [openDailyCalendar, setOpenDailyCalendar] = useState(false);
@@ -44,7 +46,7 @@ const ReportsPage = () => {
     setOpenDashboardCalendar(false);
   };
   return (
-    <>
+    <div className={styles.reports_container}>
       {openDailyCalendar && (
         <DatePicker
           open={openDailyCalendar}
@@ -103,7 +105,7 @@ const ReportsPage = () => {
         currentPage={currentPage}
         setAddEntry={setAddEntry}
       />
-    </>
+    </div>
   );
 };
 

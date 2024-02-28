@@ -9,7 +9,7 @@ const SalesExpensesBarGraph = ({ data, title }) => {
     <div className={styles.graph_container}>
       <h2 className={styles.graph_header}>{title}</h2>
       <ComposedChart
-        width={1080}
+        width={1015}
         height={320}
         data={data}
         margin={{

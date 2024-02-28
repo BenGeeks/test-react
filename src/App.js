@@ -9,7 +9,9 @@ function App() {
   return (
     <div className={styles.main_container}>
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <Main currentPage={currentPage} />
+      <div className={styles.page_container}>
+        <Main currentPage={currentPage} />
+      </div>
       <Footer />
     </div>
   );

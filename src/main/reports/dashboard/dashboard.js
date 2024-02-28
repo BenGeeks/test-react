@@ -26,11 +26,14 @@ const Dashboard = ({ filterBy, filterValue, openDashboardCalendar, year, quarter
     queryFn: () =>
       apiRequest({ url: `reports/dashboard?filterBy=${filterBy}&filterValue=${filterValue}`, method: 'GET' }).then((res) => res.data),
     onSuccess: (data) => {
+      console.log('DATA: ', data);
       setTotal(getTotal(data));
       setWeeklyReport(getWeeklyReport(data));
       setMonthlyReport(getMonthlyReport(data));
     },
   });
+
+  console.log('DASHBOARD REPORT QUERY', dashboardReportQuery.data);
 
   const getHeaderDisplay = () => {
     if (filterBy === 'year') return year;

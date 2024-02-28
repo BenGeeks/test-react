@@ -4,7 +4,7 @@ import styles from './daily.module.css';
 
 const Daily = () => {
   return (
-    <div>
+    <div className={styles.page_container}>
       <h2>Daily Page Goes here</h2>
     </div>
   );

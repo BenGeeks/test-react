@@ -7,6 +7,7 @@
   align-items: center;
   padding: 10px;
   overflow: auto;
+  padding-bottom: 40px;
 }
 
 .loading_gif {
@@ -28,7 +29,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0px auto;
-  width: 1080px;
+  width: 1030px;
 }
 .graph_container {
   position: relative;
@@ -48,31 +49,31 @@
   left: 90px;
 }
 
-.performance_1k_label {
+.performance_5k_label {
   position: absolute;
   top: 110px;
   left: 140px;
 }
 
-.performance_2k_label {
+.performance_8k5_label {
   position: absolute;
   top: 85px;
   left: 290px;
 }
 
-.performance_3k5_label {
+.performance_11k_label {
   position: absolute;
   top: 120px;
   left: 355px;
 }
 
-.performance_4k5_label {
+.performance_13k_label {
   position: absolute;
   top: 180px;
   left: 400px;
 }
 
-.performance_5k_label {
+.performance_15k_label {
   position: absolute;
   top: 245px;
   left: 415px;
@@ -87,7 +88,7 @@
   transform: translate(-50%, 0%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .page_container {
     display: none;
   }
@@ -119,31 +120,31 @@
     left: 45px;
   }
 
-  .performance_1k_label {
+  .performance_5k_label {
     position: absolute;
     top: 60px;
     left: 65px;
   }
 
-  .performance_2k_label {
+  .performance_8k5_label {
     position: absolute;
     top: 43px;
     left: 180px;
   }
 
-  .performance_3k5_label {
+  .performance_11k_label {
     position: absolute;
     top: 75px;
     left: 235px;
   }
 
-  .performance_4k5_label {
+  .performance_13k_label {
     position: absolute;
     top: 110px;
     left: 260px;
   }
 
-  .performance_5k_label {
+  .performance_15k_label {
     position: absolute;
     top: 150px;
     left: 265px;

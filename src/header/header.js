@@ -10,7 +10,11 @@ const Header = ({ currentPage, setCurrentPage }) => {
         <ul className={styles.main_link_container}>
           {NAVS.map((nav) => {
             return (
-              <li className={currentPage === nav ? styles.main_link_active : styles.main_link} onClick={() => setCurrentPage(nav)}>
+              <li
+                key={nav}
+                className={currentPage === nav ? styles.main_link_active : styles.main_link}
+                onClick={() => setCurrentPage(nav)}
+              >
                 {nav}
               </li>
             );

@@ -7,7 +7,7 @@ const IconBar = ({ setOpenDashboardCalendar, setOpenDailyCalendar, setOpenMonthl
   return (
     <div className={styles.icon_bar_container}>
       <div
-        className={styles.icon_box}
+        className={currentPage === 'dashboard' ? styles.icon_box_active : styles.icon_box}
         title="dashboard"
         onClick={() => (currentPage === 'dashboard' ? setOpenDashboardCalendar(true) : setCurrentPage('dashboard'))}
       >
@@ -17,7 +17,7 @@ const IconBar = ({ setOpenDashboardCalendar, setOpenDailyCalendar, setOpenMonthl
         <p className={styles.icon_text}>Dashboard</p>
       </div>
       <div
-        className={styles.icon_box}
+        className={currentPage === 'daily' ? styles.icon_box_active : styles.icon_box}
         title="daily"
         onClick={() => (currentPage === 'daily' ? setOpenDailyCalendar(true) : setCurrentPage('daily'))}
       >
@@ -27,7 +27,7 @@ const IconBar = ({ setOpenDashboardCalendar, setOpenDailyCalendar, setOpenMonthl
         <p className={styles.icon_text}>Daily</p>
       </div>
       <div
-        className={styles.icon_box}
+        className={currentPage === 'monthly' ? styles.icon_box_active : styles.icon_box}
         title="monthly"
         onClick={() => (currentPage === 'monthly' ? setOpenMonthlyCalendar(true) : setCurrentPage('monthly'))}
       >
