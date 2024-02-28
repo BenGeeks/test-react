@@ -9,3 +9,34 @@
   overflow: auto;
   padding-bottom: 40px;
 }
+.summary_box {
+  border: 1px solid #374151;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+}
+
+.header_box {
+  background-color: aliceblue;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.header {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .page_container {
+    height: calc(100vh - 125px);
+    overflow-y: auto;
+  }
+
+  .header {
+    font-size: 1rem;
+  }
+}
