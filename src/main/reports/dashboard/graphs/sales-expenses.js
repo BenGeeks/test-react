@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ComposedChart, Bar, Line, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 import styles from '../dashboard.module.css';

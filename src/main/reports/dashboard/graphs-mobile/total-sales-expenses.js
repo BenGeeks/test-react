@@ -1,4 +1,3 @@
-import React from 'react';
 import { PieChart, Pie, Cell } from 'recharts';
 
 import styles from '../dashboard.module.css';

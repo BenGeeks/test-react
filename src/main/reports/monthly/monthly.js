@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import React, { useState } from 'react';
+import { useState } from 'react';
+import moment from 'moment';
 
 import MonthlySummary from './summary';
 import MonthlyTopBar from './top-bar';
@@ -18,7 +19,8 @@ const Monthly = ({ date, openMonthlyCalendar }) => {
   const reportsQuery = useQuery({
     queryKey: ['reports'],
     enabled: !openMonthlyCalendar,
-    queryFn: () => apiRequest({ url: `reports/month?date=${date.year}-${date.month + 1}`, method: 'GET' }).then((res) => res.data),
+    queryFn: () =>
+      apiRequest({ url: `reports/month?date=${date.year}-${moment(date).format('MM')}`, method: 'GET' }).then((res) => res.data),
     onSuccess: (data) => setReportSummary(getReportSummary(data)),
   });
 

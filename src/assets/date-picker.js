@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import moment from 'moment';
 
-import styles from './date-picker.module.css';
 import { MONTH, YEAR, DAYS } from './resources';
 import Modal from './modal';
+
+import styles from './date-picker.module.css';
 
 const DatePicker = ({ open, close, onSave, defaultDate, noDay }) => {
   const [day, setDay] = useState(defaultDate ? moment(defaultDate).date() : moment().date());

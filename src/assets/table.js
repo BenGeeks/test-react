@@ -1,4 +1,3 @@
-import React from 'react';
 import { RiDeleteBin4Line, RiEditLine } from 'react-icons/ri';
 
 import styles from './table.module.css';

@@ -1,5 +1,5 @@
-import React from 'react';
 import { NAVS } from './resources';
+
 import styles from './header.module.css';
 
 const Header = ({ currentPage, setCurrentPage }) => {

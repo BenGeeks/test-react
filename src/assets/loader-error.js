@@ -1,5 +1,5 @@
-import React from 'react';
 import { BiErrorAlt } from 'react-icons/bi';
+
 import styles from './loader-error.module.css';
 
 export const Loader = () => {

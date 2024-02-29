@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { PieChart, Pie, Cell } from 'recharts';
 
 import styles from '../dashboard.module.css';
@@ -40,7 +38,12 @@ const PerformancePieGraphWithNeedle = ({ report }) => {
 
     return [
       <circle key="circle" cx={x0} cy={y0} r={r} fill={color} stroke="none" />,
-      <path key="path" d={`M${xba} ${yba}L${xbb} ${ybb} L${xp} ${yp} L${xba} ${yba}`} stroke="#none" fill={color} />,
+      <path
+        key="path"
+        d={`M${xba || 0} ${yba || 0}L${xbb || 0} ${ybb || 0} L${xp || 0} ${yp || 0} L${xba || 0} ${yba || 0}`}
+        stroke="#none"
+        fill={color}
+      />,
     ];
   };
   return (

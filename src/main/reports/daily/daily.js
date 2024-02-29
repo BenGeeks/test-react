@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import moment from 'moment';
-
-import styles from './daily.module.css';
-
+import { useEffect, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import moment from 'moment';
 
 import { getSalesCount, getSalesSummary, getOtherSalesData, getExpenseSummary, getFinalReportData } from './resources';
 import { SUMMARY_HEADER, SALES_COUNT_HEADER, EXPENSES_HEADER } from './resources';
-import Table from '../../../assets/table';
-import apiRequest from '../../../lib/axios';
 import { Loader, Error } from '../../../assets/loader-error';
+import apiRequest from '../../../lib/axios';
+import Table from '../../../assets/table';
+
+import styles from './daily.module.css';
 
 const Daily = ({ date, setDate, openDailyCalendar }) => {
   const [expensesSummary, setExpenseSummary] = useState(null);

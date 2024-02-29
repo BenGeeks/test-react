@@ -1,19 +1,19 @@
-import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import { useState } from 'react';
 import moment from 'moment';
 
 import TotalSalesExpensesPieGraph from './graphs/total-sales-expenses';
 import PerformancePieGraphWithNeedle from './graphs/performance';
 import SalesExpensesBarGraph from './graphs/sales-expenses';
-import { Loader, Error } from '../../../assets/loader-error';
-
 import TotalSalesExpensesPieGraphMobile from './graphs-mobile/total-sales-expenses';
 import PerformancePieGraphWithNeedleMobile from './graphs-mobile/performance';
 import SalesExpensesBarGraphMobile from './graphs-mobile/sales-expense';
 
 import { getTotal, getWeeklyReport, getMonthlyReport } from './resources';
-import styles from './dashboard.module.css';
+import { Loader, Error } from '../../../assets/loader-error';
 import apiRequest from '../../../lib/axios';
+
+import styles from './dashboard.module.css';
 
 const Dashboard = ({ filterBy, filterValue, openDashboardCalendar, year, quarter, month }) => {
   const [total, setTotal] = useState(null);

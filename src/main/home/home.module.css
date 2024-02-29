@@ -11,9 +11,9 @@
 
 .title_container {
   margin-top: 100px;
-  height: 400px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0px 100px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 100px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;

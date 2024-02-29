@@ -1,6 +1,7 @@
-import Modal from './modal';
-import styles from './dashboard-date-picker.module.css';
 import { MONTH } from './resources';
+import Modal from './modal';
+
+import styles from './dashboard-date-picker.module.css';
 
 const DashboarDatePicker = ({ open, close, filterBy, setFilterBy, month, setMonth, quarter, setQuarter, year, setYear, onSave }) => {
   const YEAR = [2023, 2024, 2025, 2026, 2027, 2028, 2029];
